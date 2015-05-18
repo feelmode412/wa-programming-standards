@@ -16,7 +16,7 @@ You **MAY NOT** put any Javascript in any spesific section files. Instead, put a
 
 If you need to throw a variable from server, put the script in `/app/views/layout/master.blade.php`. So, scripts.js will catch it.
 
-#### 3. Dynamic Content Files
+### 3. Dynamic Content Files
 
 All dynamic content files uploaded by the end users, such as images and PDF files, must be stored inside `/public/contents/`. Sub directories are **NOT ALLOWED**.
 
