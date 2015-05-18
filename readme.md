@@ -34,7 +34,7 @@ Beside our standards above, of course you have to be familiar with the common st
 
 Don't get it?
 
-Common standards means the ways, standards, rules, or best practices which are well-known in the programming community.
+Common standards means the ways, standards, rules, or best practices which are well-known in the programming community. See below for examples.
 
 * Implement framework's conventions
 * Implement framework's best practices
@@ -42,6 +42,5 @@ Common standards means the ways, standards, rules, or best practices which are w
 * Put Javascript files at bottom
 * Clean code, readable code, DRY, etc.
 * Make Git commit comment informative
-* etc.
 
 &copy; 2015 [Web Architect Technology, PT](http://www.webarq.com/)
