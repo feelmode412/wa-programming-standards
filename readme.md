@@ -1,7 +1,7 @@
 # Programming Standards
 --- WEBARQ Web Application Division ---
 
-## The Standards
+## Programming Standards
 
 ### 1. Main Languages and Frameworks
 * Our main language is PHP
