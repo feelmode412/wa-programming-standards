@@ -51,7 +51,7 @@ Examples:
 
 * A new record in `comments` table which is created after someone posted a comment on frontend.
 
-### 6. Revision Control
+### 6. [Revision Control](http://en.wikipedia.org/wiki/Revision_control)
 
 We use Git as revision control. **No other VCS is allowed**.
 
