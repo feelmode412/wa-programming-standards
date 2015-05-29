@@ -10,22 +10,25 @@
 
 For certain projects with specific needs, sure we can use other frameworks, or even other languages.
 
-### 2. Javascripts
+### 2. Helpers
+Helpers **MUST BE** declared as class methods or Facades (http://laravel.com/docs/4.2/facades). For instance, `CoolApp::formatDate($date)`. Helpers in public function format, like `format_date($date)`, is **NOT ALLOWED**.
+
+### 3. Javascripts
 
 You **MAY NOT** put any Javascript in any spesific section files. Instead, put all Javascripts inside `/public/js/scripts.js`. This is the best practice for performance and maintainable code.
 
 If you need to throw a variable from server, put the script in `/app/views/layout/master.blade.php`. So, `/public/js/scripts.js` will catch it.
 
-### 3. Dynamic Content Files
+### 4. Dynamic Content Files
 
 All dynamic content files uploaded by the end users, such as images and PDF files, must be stored inside `/public/contents/`. Sub directories are **NOT ALLOWED**.
 
-### 4. Revision Control
 We use Git as revision control. **No other VCS is allowed**.
 
 Make yourself fluent with it, at least the basics.
+### 5. Revision Control
 
-### 5. English Usage
+### 6. English Usage
 * **MANDATORY**: file name, variable name, class name, method name, etc.
 * Optional: comments, Git commit comment
 
