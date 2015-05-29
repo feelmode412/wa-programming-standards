@@ -42,11 +42,11 @@ Common standards means the ways, standards, rules, or best practices which are w
 
 * Implement framework's conventions
 * Implement framework's best practices
-* No multiple line on View (MVC) files
+* No multiple line on View (of MVC) files
 * Put Javascript files at bottom
 * Clean code, readable code, DRY, etc.
 * Make Git commit comment informative
-* Implement [Semantic URL](http://en.wikipedia.org/wiki/Semantic_URL) for website (public frontend pages) URLs.
-* Implement [Semantic URL](http://en.wikipedia.org/wiki/Semantic_URL) for REST URLs.
+* Implement [Semantic URL](http://en.wikipedia.org/wiki/Semantic_URL) for website (public frontend pages) URLs
+* Implement [Semantic URL](http://en.wikipedia.org/wiki/Semantic_URL) for REST URLs
 
 &copy; 2015 [Web Architect Technology, PT](http://www.webarq.com/)
