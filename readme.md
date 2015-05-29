@@ -11,7 +11,7 @@
 For certain projects with specific needs, sure we can use other frameworks, or even other languages.
 
 ### 2. Helpers
-Helpers **MUST BE** declared as class methods or Facades (http://laravel.com/docs/4.2/facades). For instance, `CoolApp::formatDate($date)`. Helpers in public function format, like `format_date($date)`, is **NOT ALLOWED**.
+Helpers **MUST BE** declared as class methods or [Facades](http://laravel.com/docs/4.2/facades). For instance, `CoolApp::formatDate($date)`. Helpers in public function format, like `format_date($date)`, is **NOT ALLOWED**.
 
 ### 3. Javascripts
 
