@@ -34,7 +34,7 @@ Make yourself fluent with it, at least the basics.
 * Optional: comments, Git commit comment
 
 ## Common Standards
-Beside our standards above, of course you have to be familiar with the common standards and implementing them for our works best result.
+Beside our standards above, of course **you have to be familiar with the common standards and implementing them** for our works best result.
 
 Don't get it?
 
