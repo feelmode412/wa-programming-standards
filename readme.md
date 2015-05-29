@@ -23,10 +23,11 @@ If you need to throw a variable from server, put the script in `/app/views/layou
 
 All dynamic content files uploaded by the end users, such as images and PDF files, must be stored inside `/public/contents/`. Sub directories are **NOT ALLOWED**.
 
+### 5. Revision Control
+
 We use Git as revision control. **No other VCS is allowed**.
 
 Make yourself fluent with it, at least the basics.
-### 5. Revision Control
 
 ### 6. English Usage
 * **MANDATORY**: file name, variable name, class name, method name, etc.
