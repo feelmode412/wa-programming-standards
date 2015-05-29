@@ -14,7 +14,7 @@ For certain projects with specific needs, sure we can use other frameworks, or e
 
 You **MAY NOT** put any Javascript in any spesific section files. Instead, put all Javascripts inside `/public/js/scripts.js`. This is the best practice for performance and maintainable code.
 
-If you need to throw a variable from server, put the script in `/app/views/layout/master.blade.php`. So, scripts.js will catch it.
+If you need to throw a variable from server, put the script in `/app/views/layout/master.blade.php`. So, `/public/js/scripts.js` will catch it.
 
 ### 3. Dynamic Content Files
 
