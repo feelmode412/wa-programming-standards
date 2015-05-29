@@ -46,5 +46,7 @@ Common standards means the ways, standards, rules, or best practices which are w
 * Put Javascript files at bottom
 * Clean code, readable code, DRY, etc.
 * Make Git commit comment informative
+* Implement [Semantic URL](http://en.wikipedia.org/wiki/Semantic_URL) for website (public frontend pages) URLs.
+* Implement [Semantic URL](http://en.wikipedia.org/wiki/Semantic_URL) for REST URLs.
 
 &copy; 2015 [Web Architect Technology, PT](http://www.webarq.com/)
