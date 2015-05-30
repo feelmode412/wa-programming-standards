@@ -35,7 +35,7 @@ All dynamic content files uploaded by the end users, such as images and PDF file
 There are 3 kinds of data in our databases. They are *system data*, *default data* and *content data*.
 #### 5.1 System Data
 
-A *system data* record is a database record which cannot be deleted as it is needed by our application system. It is created in development phase and included in Git as migrations (or `/app/database/schema.sql`). Of course, its value can be changed by end users in production, yet the record itself **cannot be deleted**.
+A *system data* record is a database record which cannot be deleted as it is needed by our application system. It is created in development phase and included in [migrations](http://laravel.com/docs/4.2/migrations#creating-migrations) (not [seeds](http://laravel.com/docs/4.2/migrations#database-seeding)). Of course, its value can be changed by end users in production, yet the record itself **cannot be deleted**.
 
 Examples:
 
@@ -44,7 +44,7 @@ Examples:
 
 #### 5.2 Default Data
 
-A *default data* record is a database record which is needed by our application UIs or functionalities during pre-production phases. It is created in development phase and included in Git as a [seed](http://laravel.com/docs/4.2/migrations#database-seeding). It can be deleted by end users in production.
+A *default data* record is a database record which is needed by our application UIs or functionalities during pre-production phases. Like *system data*, it is created in development phase and included in [migrations](http://laravel.com/docs/4.2/migrations#creating-migrations) (not [seeds](http://laravel.com/docs/4.2/migrations#database-seeding)). It can be deleted by end users in production.
 
 Examples:
 
