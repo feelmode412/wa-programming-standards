@@ -23,7 +23,7 @@ Incorrect:
 
 ### 3. Javascripts
 
-You **MAY NOT** put any Javascript in any spesific section files. Instead, put all Javascripts inside `/public/js/scripts.js`. This is the best practice for performance and maintainable code.
+You **MAY NOT** put Javascript in any spesific section file. Instead, put all Javascript inside `/public/js/scripts.js`. This is the best practice for performance and code maintainability.
 
 If you need to throw a variable from server, put the script in `/app/views/layout/master.blade.php`. So, `/public/js/scripts.js` will catch it.
 
