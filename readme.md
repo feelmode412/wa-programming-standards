@@ -66,7 +66,7 @@ This is optional. When developing, sometimes we might need to create sample data
 ### 6. [Revision Control](http://en.wikipedia.org/wiki/Revision_control)
 
 * We use Git as revision control. **No other VCS is allowed**. So, make yourself fluent with it, at least the basics.
-* Avoid committing large static files (usually *.mp4, *.pdf). The frontend developers might include large files when developing static company profile websites. Try not to include them in our Git.
+* Avoid committing large static files, such as a PDF or mp4 file sized > 5 MB. The frontend developers might include such files when developing static company profile websites. Try not to include them in our Git.
 
 ### 7. English Usage
 * **MANDATORY**: file name, variable name, class name, method name, etc.
