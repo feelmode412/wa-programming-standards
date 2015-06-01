@@ -29,7 +29,23 @@ If you need to throw a variable from server, put the script in `/app/views/layou
 
 ### 4. Dynamic Content Files
 
+#### 4.1 Location
 All dynamic content files uploaded by the end users, such as images and PDF files, must be stored inside `/public/contents/`. Sub directories are **NOT ALLOWED**.
+
+#### 4.2 Git
+**Ignore** everything inside `/public/contents/` directory.
+
+#### 4.3 Default Dynamic Content Files
+
+This is related to the section 5.2 below.
+
+Save the default image files of `home_banners` with `default-` prefix, then include `/public/contents/default-*` in Git.
+
+Example:
+
+* `/public/contents/default-home-banner1.jpg`
+* `/public/contents/default-home-banner2.jpg`
+* `/public/contents/default-home-banner3.jpg`
 
 ### 5. Database
 There are 4 kinds of data in our databases. They are *system data*, *default data*, *content data* and *sample data*.
