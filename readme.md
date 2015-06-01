@@ -32,8 +32,8 @@ If you need to throw a variable from server, put the script in `/app/views/layou
 All dynamic content files uploaded by the end users, such as images and PDF files, must be stored inside `/public/contents/`. Sub directories are **NOT ALLOWED**.
 
 ### 5. Database
-There are 3 kinds of data in our databases. They are *system data*, *default data* and *content data*.
-#### 5.1 System Data
+There are 4 kinds of data in our database. They are *system data*, *default data*, *content data* and *sample data*.
+#### 5.1 System Data (Development, Production)
 
 A *system data* record is a database record which cannot be deleted as it is needed by our application system. It is created in development phase and included in [migrations](http://laravel.com/docs/4.2/migrations#creating-migrations) (not [seeds](http://laravel.com/docs/4.2/migrations#database-seeding)). Of course, its value can be changed by end users in production, yet the record itself **cannot be deleted**.
 
@@ -42,7 +42,7 @@ Examples:
 * All rows in `settings` table.
 * The `Super Administrator` or `Administrator` rows in `roles` table.
 
-#### 5.2 Default Data
+#### 5.2 Default Data (Development, Production)
 
 A *default data* record is a database record which is needed by our application UIs or functionalities during pre-production phases. Like *system data*, it is created in development phase and included in [migrations](http://laravel.com/docs/4.2/migrations#creating-migrations) (not [seeds](http://laravel.com/docs/4.2/migrations#database-seeding)). But, it can be deleted by end users in production.
 
@@ -51,13 +51,17 @@ Examples:
 * The default administrator (e.g. `info@webarq.com`) record in `users` table.
 * The initial rows in `home_banners` table. Think about it, our Home page would be shown improperly if this table is empty.
 
-#### 5.3 Content Data
+#### 5.3 Content Data (Production)
 
 A *content data* record is a database record created by end users on production. CRUD applies here.
 
 Examples:
 
 * A new record in `comments` table which is created after someone posted a comment on frontend.
+
+#### 5.4 Sample Data (Development)
+
+This is optional. When developing, sometimes we might need to create sample data as [seeds](http://laravel.com/docs/4.2/migrations#database-seeding) for testing purposes.
 
 ### 6. [Revision Control](http://en.wikipedia.org/wiki/Revision_control)
 
