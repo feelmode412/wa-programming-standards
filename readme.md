@@ -32,7 +32,7 @@ If you need to throw a variable from server, put the script in `/app/views/layou
 All dynamic content files uploaded by the end users, such as images and PDF files, must be stored inside `/public/contents/`. Sub directories are **NOT ALLOWED**.
 
 ### 5. Database
-There are 4 kinds of data in our database. They are *system data*, *default data*, *content data* and *sample data*.
+There are 4 kinds of data in our databases. They are *system data*, *default data*, *content data* and *sample data*.
 #### 5.1 System Data (Development, Production)
 
 A *system data* record is a database record which cannot be deleted as it is needed by our application system. It is created in development phase and included in [migrations](http://laravel.com/docs/4.2/migrations#creating-migrations) (not [seeds](http://laravel.com/docs/4.2/migrations#database-seeding)). Of course, its value can be changed by end users in production, yet the record itself **cannot be deleted**.
