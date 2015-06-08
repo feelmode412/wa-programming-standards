@@ -12,7 +12,11 @@ Version 1.x-dev
 
 For certain projects with specific needs, sure we can use other frameworks, or even other languages.
 
-### 2. Helpers
+### 2. PHP Coding Style
+
+Follow Laravel's coding style.
+
+### 3. Helpers
 Helpers **MUST BE** declared as class methods or [Facades](http://laravel.com/docs/4.2/facades). Helpers in public function format are **NOT ALLOWED**.
 
 Correct:
@@ -23,23 +27,23 @@ Incorrect:
 
 	format_date($date)
 
-### 3. Javascripts
+### 4. Javascripts
 
 You **MAY NOT** put Javascript in any spesific section file. Instead, put all Javascript inside `/public/js/scripts.js`. This is the best practice for performance and code maintainability.
 
 If you need to throw a variable from server, put the script in `/app/views/layout/master.blade.php`. So, `/public/js/scripts.js` will catch it.
 
-### 4. Dynamic Content Files
+### 5. Dynamic Content Files
 
-#### 4.1 Location
+#### 5.1 Location
 All dynamic content files uploaded by the end users, such as images and PDF files, must be stored inside `/public/contents/`. Sub directories are **NOT ALLOWED**.
 
-#### 4.2 Git
+#### 5.2 Git
 **Ignore** everything inside `/public/contents/` directory.
 
-#### 4.3 Default Dynamic Content Files
+#### 5.3 Default Dynamic Content Files
 
-This is related to the section 5.2 below.
+This is related to the section 6.2 below.
 
 Save the default image files of `home_banners` with `default-` prefix, then include `/public/contents/default-*` in Git.
 
@@ -49,9 +53,9 @@ Example:
 * `/public/contents/default-home-banner2.jpg`
 * `/public/contents/default-home-banner3.jpg`
 
-### 5. Database
+### 6. Database
 There are 4 kinds of data in our databases. They are *system data*, *default data*, *content data* and *sample data*.
-#### 5.1 System Data (Development, Production)
+#### 6.1 System Data (Development, Production)
 
 A *system data* record is a database record which cannot be deleted as it is needed by our application system. It is created in development phase and included in [migrations](http://laravel.com/docs/4.2/migrations#creating-migrations) (not [seeds](http://laravel.com/docs/4.2/migrations#database-seeding)). Of course, its value can be changed by end users in production, yet the record itself **cannot be deleted**.
 
@@ -60,7 +64,7 @@ Examples:
 * All rows in `settings` table.
 * The `Super Administrator` or `Administrator` rows in `roles` table.
 
-#### 5.2 Default Data (Development, Production)
+#### 6.2 Default Data (Development, Production)
 
 A *default data* record is a database record which is needed by our application UIs or functionalities during pre-production phases. Like *system data*, it is created in development phase and included in [migrations](http://laravel.com/docs/4.2/migrations#creating-migrations) (not [seeds](http://laravel.com/docs/4.2/migrations#database-seeding)). But, it can be deleted by end users in production.
 
@@ -69,7 +73,7 @@ Examples:
 * The default administrator (e.g. `info@webarq.com`) record in `users` table.
 * The initial rows in `home_banners` table. Think about it, our Home page would be shown improperly if this table is empty.
 
-#### 5.3 Content Data (Production)
+#### 6.3 Content Data (Production)
 
 A *content data* record is a database record created by end users on production. CRUD applies here.
 
@@ -77,16 +81,16 @@ Examples:
 
 * A new record in `comments` table which is created after someone posted a comment on frontend.
 
-#### 5.4 Sample Data (Development)
+#### 6.4 Sample Data (Development)
 
 This is optional. When developing, sometimes we might need to create sample data as [seeds](http://laravel.com/docs/4.2/migrations#database-seeding) for testing purposes.
 
-### 6. [Revision Control](http://en.wikipedia.org/wiki/Revision_control)
+### 7. [Revision Control](http://en.wikipedia.org/wiki/Revision_control)
 
 * We use Git as revision control. **No other VCS is allowed**. So, make yourself fluent with it, at least the basics.
 * Avoid committing large static files, such as a PDF or mp4 file sized > 5 MB. The frontend developers might include such files when developing static company profile websites. Try not to include them in our Git.
 
-### 7. English Usage
+### 8. English Usage
 * **MANDATORY**: file name, variable name, class name, method name, etc.
 * Optional: comments, Git commit comment
 
@@ -97,7 +101,6 @@ Don't get it?
 
 Common standards means the ways, standards, rules, or best practices which are well-known in the programming community. See below for examples.
 
-* Implement framework's conventions
 * Implement framework's best practices
 * No multiple line on View (of MVC) files
 * Put Javascript files at bottom
