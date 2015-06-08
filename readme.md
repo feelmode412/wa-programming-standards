@@ -35,11 +35,7 @@ If you need to throw a variable from server, put the script in `/app/views/layou
 
 ### 5. Dynamic Content Files
 
-#### 5.1 Location
 All dynamic content files uploaded by the end users, such as images and PDF files, must be stored inside `/public/contents/`. Sub directories are **NOT ALLOWED**.
-
-#### 5.2 Git
-**Ignore** everything inside `/public/contents/` directory.
 
 #### 5.3 Default Dynamic Content Files
 
