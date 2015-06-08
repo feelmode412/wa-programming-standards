@@ -5,18 +5,27 @@ Version 1.x-dev
 
 ## Programming Standards
 
-### 1. Main Languages and Frameworks
+1. [Main Languages and Frameworks](#main)
+2. [PHP Coding Style](#style)
+3. [Helpers](#helpers)
+4. [Javascripts](#js)
+5. [Dynamic Content Files](#content-files)
+6. [Database](#db)
+7. [Revision Control](#vcs)
+8. [English Usage](#english)
+
+### <a name="main"></a>1. Main Languages and Frameworks
 * Our main language is PHP
 * Our main framework is Laravel (version 4.2)
 * Our main micro framework is Lumen
 
 For certain projects with specific needs, sure we can use other frameworks, or even other languages.
 
-### 2. PHP Coding Style
+### <a name="style"></a>2. PHP Coding Style
 
 Follow Laravel's coding style.
 
-### 3. Helpers
+### <a name="helpers"></a>3. Helpers
 Helpers **MUST BE** declared as class methods or [Facades](http://laravel.com/docs/4.2/facades). Helpers in public function format are **NOT ALLOWED**.
 
 Correct:
@@ -27,13 +36,13 @@ Incorrect:
 
 	format_date($date)
 
-### 4. Javascripts
+### 4. <a name="js"></a>Javascripts
 
 You **MAY NOT** put Javascript in any spesific section file. Instead, put all Javascript inside `/public/js/scripts.js`. This is the best practice for performance and code maintainability.
 
 If you need to throw a variable from server, put the script in `/app/views/layout/master.blade.php`. So, `/public/js/scripts.js` will catch it.
 
-### 5. Dynamic Content Files
+### 5. <a name="content-files"></a>Dynamic Content Files
 
 #### 5.1 Location
 
@@ -51,7 +60,7 @@ Example:
 * `/public/contents/default-home-banner2.jpg`
 * `/public/contents/default-home-banner3.jpg`
 
-### 6. Database
+### 6. <a name="db"></a>Database
 There are 4 kinds of data in our databases. They are *system data*, *default data*, *content data* and *sample data*.
 #### 6.1 System Data (Development, Production)
 
@@ -83,12 +92,12 @@ Examples:
 
 This is optional. When developing, sometimes we might need to create sample data as [seeds](http://laravel.com/docs/4.2/migrations#database-seeding) for testing purposes.
 
-### 7. [Revision Control](http://en.wikipedia.org/wiki/Revision_control)
+### 7. <a name="vcs"></a>[Revision Control](http://en.wikipedia.org/wiki/Revision_control)
 
 * We use Git as revision control. **No other VCS is allowed**. So, make yourself fluent with it, at least the basics.
 * Avoid committing large static files, such as a PDF or mp4 file sized > 5 MB. The frontend developers might include such files when developing static company profile websites. Try not to include them in our Git.
 
-### 8. English Usage
+### 8. <a name="english"></a>English Usage
 * **MANDATORY**: file name, variable name, class name, method name, etc.
 * Optional: comments, Git commit comment
 
