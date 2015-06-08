@@ -1,6 +1,8 @@
 # Programming Standards
 --- WEBARQ Web Application Division ---
 
+Version 1.x-dev
+
 ## Programming Standards
 
 ### 1. Main Languages and Frameworks
