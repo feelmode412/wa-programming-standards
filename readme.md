@@ -5,7 +5,7 @@
 
 ### 1. Main Languages and Frameworks
 * Our main language is PHP
-* Our main framework is Laravel
+* Our main framework is Laravel (version 4.2)
 * Our main micro framework is Lumen
 
 For certain projects with specific needs, sure we can use other frameworks, or even other languages.
