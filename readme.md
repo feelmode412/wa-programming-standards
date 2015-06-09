@@ -10,7 +10,7 @@ Version 1.x-dev
 3. [Helpers](#helpers)
 4. [Javascripts](#js)
 5. [Database](#db)
-6. [Dynamic Content Files](#content-files)
+6. [Content Files](#content-files)
 7. [Revision Control](#vcs)
 8. [English Usage](#english)
 
@@ -74,13 +74,13 @@ Examples:
 
 This is optional. When developing, sometimes we might need to create sample data as [seeds](http://laravel.com/docs/4.2/migrations#database-seeding) for testing purposes.
 
-### 6. <a name="content-files"></a>Dynamic Content Files
+### 6. <a name="content-files"></a>Content Files
 
 #### 6.1 Location
 
-All dynamic content files uploaded by the end users, such as images and PDF files, must be stored inside `/public/contents/`. Sub directories are **NOT ALLOWED**.
+All content files uploaded by the end users, such as images and PDF files, must be stored inside `/public/contents/`. Sub directories are **NOT ALLOWED**.
 
-#### 6.2 Default Dynamic Content Files
+#### 6.2 Default Content Files
 
 This is related to the section 5.2 above.
 
