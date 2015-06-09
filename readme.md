@@ -101,8 +101,9 @@ And those files **MUST BE** commited into Git.
 * Avoid committing large static files, such as a PDF or mp4 file sized > 5 MB. The frontend developers might include such files when developing static company profile websites. Try not to include them in our Git.
 
 ### 8. <a name="english"></a>English Usage
-* **MANDATORY**: file name, variable name, class name, method name, etc.
-* Optional: comments, Git commit comment
+You **MUST** use English for file name, variable name, class name, method name, etc.
+
+But, you may use Indonesian language on other parts like comments on code and Git commit.
 
 ## Common Standards
 Beside our standards above, of course **you have to be familiar with the common standards and implementing them** for our works best result.
