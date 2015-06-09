@@ -78,19 +78,22 @@ This is optional. When developing, sometimes we might need to create sample data
 
 #### 6.1 Location
 
-All content files uploaded by the end users, such as images and PDF files, must be stored inside `/public/contents/`. Sub directories are **NOT ALLOWED**.
+All content files uploaded by the end users, such as image and PDF files, must be stored inside `/public/contents/`. Sub directories are **NOT ALLOWED**.
 
 #### 6.2 Default Content Files
 
 This is related to the section 5.2 above.
 
-Save the default image files of `home_banners` with `default-` prefix, then include `/public/contents/default-*` in Git.
+You **MUST** save the default content files with `default-` prefix.
 
 Example:
 
 * `/public/contents/default-home-banner1.jpg`
 * `/public/contents/default-home-banner2.jpg`
 * `/public/contents/default-home-banner3.jpg`
+* `/public/contents/default-form.pdf`
+
+And those files **MUST BE** commited into Git.
 
 ### 7. <a name="vcs"></a>[Revision Control](http://en.wikipedia.org/wiki/Revision_control)
 
