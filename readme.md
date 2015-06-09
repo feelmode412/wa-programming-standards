@@ -9,8 +9,8 @@ Version 1.x-dev
 2. [PHP Coding Style](#style)
 3. [Helpers](#helpers)
 4. [Javascripts](#js)
-5. [Dynamic Content Files](#content-files)
-6. [Database](#db)
+5. [Database](#db)
+6. [Dynamic Content Files](#content-files)
 7. [Revision Control](#vcs)
 8. [English Usage](#english)
 
@@ -42,27 +42,9 @@ You **MAY NOT** put Javascript in any spesific section file. Instead, put all Ja
 
 If you need to throw a variable from server, put the script in `/app/views/layout/master.blade.php`. So, `/public/js/scripts.js` will catch it.
 
-### 5. <a name="content-files"></a>Dynamic Content Files
-
-#### 5.1 Location
-
-All dynamic content files uploaded by the end users, such as images and PDF files, must be stored inside `/public/contents/`. Sub directories are **NOT ALLOWED**.
-
-#### 5.2 Default Dynamic Content Files
-
-This is related to the section 6.2 below.
-
-Save the default image files of `home_banners` with `default-` prefix, then include `/public/contents/default-*` in Git.
-
-Example:
-
-* `/public/contents/default-home-banner1.jpg`
-* `/public/contents/default-home-banner2.jpg`
-* `/public/contents/default-home-banner3.jpg`
-
-### 6. <a name="db"></a>Database
+### 5. <a name="db"></a>Database
 There are 4 kinds of data in our databases. They are *system data*, *default data*, *content data* and *sample data*.
-#### 6.1 System Data (Development, Production)
+#### 5.1 System Data (Development, Production)
 
 A *system data* record is a database record which cannot be deleted as it is needed by our application system. It is created in development phase and included in [migrations](http://laravel.com/docs/4.2/migrations#creating-migrations) (not [seeds](http://laravel.com/docs/4.2/migrations#database-seeding)). Of course, its value can be changed by end users in production, yet the record itself **cannot be deleted**.
 
@@ -71,7 +53,7 @@ Examples:
 * All rows in `settings` table.
 * The `Super Administrator` or `Administrator` rows in `roles` table.
 
-#### 6.2 Default Data (Development, Production)
+#### 5.2 Default Data (Development, Production)
 
 A *default data* record is a database record which is needed by our application UIs or functionalities during pre-production phases. Like *system data*, it is created in development phase and included in [migrations](http://laravel.com/docs/4.2/migrations#creating-migrations) (not [seeds](http://laravel.com/docs/4.2/migrations#database-seeding)). But, it can be deleted by end users in production.
 
@@ -80,7 +62,7 @@ Examples:
 * The default administrator (e.g. `info@webarq.com`) record in `users` table.
 * The initial rows in `home_banners` table. Think about it, our Home page would be shown improperly if this table is empty.
 
-#### 6.3 Content Data (Production)
+#### 5.3 Content Data (Production)
 
 A *content data* record is a database record created by end users on production. CRUD applies here.
 
@@ -88,9 +70,27 @@ Examples:
 
 * A new record in `comments` table which is created after someone posted a comment on frontend.
 
-#### 6.4 Sample Data (Development)
+#### 5.4 Sample Data (Development)
 
 This is optional. When developing, sometimes we might need to create sample data as [seeds](http://laravel.com/docs/4.2/migrations#database-seeding) for testing purposes.
+
+### 6. <a name="content-files"></a>Dynamic Content Files
+
+#### 6.1 Location
+
+All dynamic content files uploaded by the end users, such as images and PDF files, must be stored inside `/public/contents/`. Sub directories are **NOT ALLOWED**.
+
+#### 6.2 Default Dynamic Content Files
+
+This is related to the section 5.2 above.
+
+Save the default image files of `home_banners` with `default-` prefix, then include `/public/contents/default-*` in Git.
+
+Example:
+
+* `/public/contents/default-home-banner1.jpg`
+* `/public/contents/default-home-banner2.jpg`
+* `/public/contents/default-home-banner3.jpg`
 
 ### 7. <a name="vcs"></a>[Revision Control](http://en.wikipedia.org/wiki/Revision_control)
 
