@@ -23,7 +23,7 @@ For certain projects with specific needs, sure we can use other frameworks, or e
 
 ### <a name="style"></a>2. PHP Coding Style
 
-Follow Laravel's coding style.
+You **MUST** follow Laravel's coding style.
 
 ### <a name="helpers"></a>3. Helpers
 Helpers **MUST BE** declared as class methods or [Facades](http://laravel.com/docs/4.2/facades). Helpers in public function format are **NOT ALLOWED**.
