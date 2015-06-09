@@ -1,7 +1,7 @@
 # Programming Standards
 --- WEBARQ Web Application Division ---
 
-Version 1.x-dev
+Version 1.0
 
 ## Programming Standards
 
